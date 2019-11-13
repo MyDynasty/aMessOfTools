@@ -1,0 +1,14 @@
+mkdir /usr/share/metasploit-framework/documentation/modules/exploit/windows/rdp
+wget -P /usr/share/metasploit-framework/documentation/modules/exploit/windows/rdp https://raw.githubusercontent.com/rapid7/metasploit-framework/edb7e20221e2088497d1f61132db3a56f81b8ce9/documentation/modules/exploit/windows/rdp/cve_2019-0708_bluekeep_rce.md
+
+
+rm -fr /usr/share/metasploit-framework/lib/msf/core/exploit/rdp.rb && wget -P /usr/share/metasploit-framework/lib/msf/core/exploit https://raw.githubusercontent.com/rapid7/metasploit-framework/edb7e20221e2088497d1f61132db3a56f81b8ce9/lib/msf/core/exploit/rdp.rb
+
+
+rm -fr /usr/share/metasploit-framework/modules/auxiliary/scanner/rdp/cve_2019_0708_bluekeep.rb&&wget -P /usr/share/metasploit-framework/modules/auxiliary/scanner/rdp https://raw.githubusercontent.com/rapid7/metasploit-framework/edb7e20221e2088497d1f61132db3a56f81b8ce9/modules/auxiliary/scanner/rdp/cve_2019_0708_bluekeep.rb
+
+
+rm -fr /usr/share/metasploit-framework/modules/auxiliary/scanner/rdp/rdp_scanner.rb&&wget -P /usr/share/metasploit-framework/modules/auxiliary/scanner/rdp https://raw.githubusercontent.com/rapid7/metasploit-framework/edb7e20221e2088497d1f61132db3a56f81b8ce9/modules/auxiliary/scanner/rdp/rdp_scanner.rb
+
+
+mkdir /usr/share/metasploit-framework/modules/exploits/windows/rdp&&wget -P /usr/share/metasploit-framework/modules/exploits/windows/rdp https://raw.githubusercontent.com/rapid7/metasploit-framework/edb7e20221e2088497d1f61132db3a56f81b8ce9/modules/exploits/windows/rdp/cve_2019_0708_bluekeep_rce.rb
