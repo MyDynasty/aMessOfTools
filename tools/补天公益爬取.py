@@ -4,7 +4,7 @@ import requests
 import time,re
 
 #公益src页数
-pageNum = 176              #176
+pageNum = 179              #176
 r = requests.post("https://www.butian.net/Reward/pub",data={'s':'1','p':'1','token':''})
 r.json()
 
@@ -33,10 +33,10 @@ def organizeData():
     '''
     global data
     for i in data:
-        with open('data1.txt','a') as f:
+        with open('data2.txt','a') as f:
             try:
                 srcurl = requests.get("https://www.butian.net/Loo/submit?cid=" + i['company_id'], cookies={
-                    'btlc_ba52447ea424004a7da412b344e5e41a': '870a8cd7a190258cbb2effd7143786892b346b3cc8ea0cc91348257a8e1eb689'}).text
+                    'btlc_ba52447ea424004a7da412b344e5e41a': 'bd02e9305511a86e3ae417f36e945ba9597254c78123b46abb8fe179ba9dd3c4'}).text
                 curl = re.findall('placeholder="请输入厂商域名" value=\"(.*)\"', srcurl)
                 f.write(i['company_id'] + '\t' + i['company_name'] + '\t' + str(curl) + '\n')
                 print('SUCCESS ID : ' + i['company_id'])
