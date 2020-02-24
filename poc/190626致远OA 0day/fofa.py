@@ -29,4 +29,4 @@ def spider_ip(url):
                 file_put(ip+"\n")
 
 for i in range(1,5):
-    spider_ip("https://fofa.so/result?full=true&page="+ str(i) +"&qbase64=")c2VleW9u
+    spider_ip("https://fofa.so/result?full=true&page="+ str(i) +"&qbase64=")

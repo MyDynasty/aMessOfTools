@@ -68,7 +68,7 @@ def resource_info(access_token):
 
 def mian():
     global page,mode,query
-
+    print('sssssssss')
     access_token = Check()
     search()
     if not access_token:

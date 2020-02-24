@@ -11,7 +11,7 @@ import base64
 import urllib
 
 # 输入要测试的url
-url = ''
+url = 'http://10.45.192.69'
 # 这是代理IP
 proxies = [{'http': '127.0.0.1:1081', 'https': 'socks5h://127.0.0.1:1081'}]  # 使用时需要ss填写正确，并且关闭代理软件
 # 创建ProxyHandler
