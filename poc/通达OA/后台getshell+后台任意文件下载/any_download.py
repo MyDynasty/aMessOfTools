@@ -16,7 +16,7 @@ def createNas(url, username='admin', password=''):
     a = r.get(url + '/general/system/netdisk').text
     # print(a)
     b = re.findall('DISK_ID=(\d+?)&', a)
-    b.sort()
+    b.sort(key=int)
     DISK_ID = b[-1]
 
     # 设置共享目录访问权限
