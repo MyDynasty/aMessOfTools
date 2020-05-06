@@ -6,8 +6,8 @@ import requests
 page = 1
 
 # 输入个人账号密码
-user = 'iceqboo@163.com'
-passwd = 'Addae0411'
+user = '*****@163.com'
+passwd = '*******'
 
 
 # 验证用户名密码，返回access_token

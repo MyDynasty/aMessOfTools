@@ -16,10 +16,10 @@ data = list()
 
 
 def pubWelfareSrcCrawlName():
-    '''
+    """
     爬取所有公益src名称与ID
 
-    '''
+    """
     global data
     for page in range(startpage, endpage + 1):
         time.sleep(0.1)
